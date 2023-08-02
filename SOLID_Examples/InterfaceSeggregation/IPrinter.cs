@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace SOLID_Examples.InterfaceSeggregation
 {
-    internal interface Interface1
+    public interface IPrinter
     {
+        void Print();
     }
+    public interface IScanner
+    {
+        void Scan();
+    }
+    public interface IFax
+    {
+        void Fax();
+    }
+    public class SimplePrinter : IPrinter
+    {
+        public void Print()
+        {
+            Console.WriteLine("Printing...");
+        }
+    }
+
 }

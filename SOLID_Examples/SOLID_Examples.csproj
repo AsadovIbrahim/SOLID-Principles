@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependencyInversion\ReportGenerator.cs" />
+    <Compile Include="InterfaceSeggregation\IPrinter.cs" />
+    <Compile Include="LiskovSubstition\Shape.cs" />
     <Compile Include="OpenClosed\Shape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,10 +54,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DependencyInversion\" />
-    <Folder Include="InterfaceSeggregation\" />
-    <Folder Include="LiskovSubstition\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
